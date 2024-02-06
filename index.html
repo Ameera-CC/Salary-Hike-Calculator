@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/848f8b6cbf.js" crossorigin="anonymous"></script>
+
+    <title>Slary Hike Calculator</title>
+</head>
+<body>
+    
+    <div class="main-div">
+        <div class="calc-div">
+            <h1>Salary Hike Calculator</h1>
+
+            <!-- <form action="" name="calc-form"> -->
+            <div>
+                <div class="input-item">
+                    <label for="current_ctc_amnt">Current CTC in Amount : </label>
+                    <input type="text" name="" id="current_ctc_amnt" placeholder="Current CTC">
+                </div>
+
+                <div class="input-item">
+                        <label for="expected-ctc-amnt">Expected CTC in Amount : </label>
+                        <div class="input-field" >
+                            <input type="text" name="expected-ctc-amnt-field" id="expected-ctc-amnt"  placeholder="Expected CTC" >  
+                            
+                            <div class="input-btn">
+                                <button id="btn_amount">
+                                    <i class="fa-solid fa-magnifying-glass"></i> 
+                                </button>                          
+                            </div>
+                        </div>
+                </div>
+
+                <div class="input-item">
+                    <label for="expected-hike-perc">Expected Hike in % : </label>
+                    <div class="input-field" >
+                        <input type="text" name="expected-hike-perc-field" id="expected-hike-perc" placeholder="Expected Hike %">  
+                        
+                        <div class="input-btn">
+                            <button id="btn_percent">
+                                <i class="fa-solid fa-magnifying-glass"></i> 
+                            </button>                          
+
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="reset-div">
+                    <button class="reset-btn" id="reset">Reset</button>
+                </div>
+
+            <!-- </form> -->
+            </div>                
+
+        </div>
+
+    </div>
+    <script src="/js/jquery.min.js"></script>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

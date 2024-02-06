@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.main-div{
+    background-color: #5b5555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calc-div{
+    background-color: rgb(125, 160, 180);
+    margin: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+.input-item{
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.input-item label,input{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px 10px 10px;
+    font-size: 18px;
+
+}
+
+.input-item label{
+    font-size: 20px;
+    color: rgb(134, 0, 65);
+    font-weight: 500;
+
+
+}
+
+
+
+.input-item input{
+    font-size: 15px;
+    width: calc(100% - 50px);
+    padding: 15px;
+
+}
+
+
+
+.input-item button{
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px;
+    margin: 15px 10px 15px 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.input-field{
+    position: relative;
+}
+
+.input-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+}
+
+.reset-div{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reset-btn{
+    background-color: aliceblue;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #4d3f3f;
+    cursor: pointer;
+    transition:  transform 0.5s;
+
+
+}
+
+.reset-btn:hover{
+    background-color: rgb(37, 92, 139);
+    color: aliceblue;
+    transform: scale(1.1);
+
+
+}
+
+/*-----------------Media Query------------------------*/
+@media only screen and (max-width: 600px){
+
+    .input-item{
+        margin: 10px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+
+    .calc-div{
+        margin: 10px 40px 10px 40px;
+        padding: 10px 20px 10px 20px;
+
+        
+    }
+
+
+}
