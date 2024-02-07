@@ -42,7 +42,7 @@ function calculateCTC() {
 
 
 
-$("#btn_amount").on("click touchstart", function() {
+$("#btn_amount").on("click", function() {
     $("#btn_percent").css("display", "none")
     calculateCTC();
 });
